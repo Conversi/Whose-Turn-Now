@@ -36,7 +36,7 @@ namespace Whose_Turn_Now.Controllers
         }
 
         [Authorize]
-        public IActionResult SharedTask()
+        public IActionResult CreateTask()
         {
             return View();
         }

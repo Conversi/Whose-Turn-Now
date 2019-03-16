@@ -1,0 +1,40 @@
+﻿@model Whose_Turn_Now.Models.JobModel
+
+@{
+    ViewData["Title"] = "CreateTask";
+}
+
+<h2>CreateTask</h2>
+
+<h4>JobModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateTask">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TaskName" class="control-label"></label>
+                <input asp-for="TaskName" class="form-control" />
+                <span asp-validation-for="TaskName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Helpers" class="control-label"></label>
+                <input asp-for="Helpers" class="form-control" />
+                <span asp-validation-for="Helpers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

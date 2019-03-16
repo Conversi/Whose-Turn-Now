@@ -17,7 +17,7 @@ namespace Whose_Turn_Now.Models
         public string Description { get; set; }
 
         [Display(Name = "Add Helpers")]
-        public string AddHelper { get; set; }
+        public string Helpers { get; set; }
         
         public int ID { get; set; }
     }
